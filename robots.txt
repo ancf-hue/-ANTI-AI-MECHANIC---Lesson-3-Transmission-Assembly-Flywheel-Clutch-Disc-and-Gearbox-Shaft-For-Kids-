@@ -1,0 +1,46 @@
+# ROBOTS.TXT для ANTI AI MECHANIC - Урок 3: Трансмиссия и Сцепление
+# Инструкции для поисковых роботов
+
+User-agent: *
+Allow: /
+
+# Запрещаем индексацию служебных файлов и папок
+Disallow: /temp/
+Disallow: /test/
+Disallow: /backup/
+Disallow: /assets/
+Disallow: /css/
+Disallow: /js/
+
+# Запрещаем индексацию временных и системных файлов
+Disallow: /*.tmp$
+Disallow: /*.log$
+Disallow: /*.bak$
+Disallow: /*.swp$
+Disallow: /*.DS_Store$
+
+# Запрещаем индексацию пустых страниц
+Disallow: /404.html
+Disallow: /500.html
+
+# Запрещаем параметры URL (чтобы избежать дублей)
+Disallow: /*?*
+Disallow: /*&*
+
+# Указываем путь к карте сайта
+Sitemap: https://anti-ai-mechanic-lesson-3-transmiss.vercel.app/sitemap.xml
+
+# Основные настройки для поисковых систем
+Host: https://anti-ai-mechanic-lesson-3-transmiss.vercel.app
+
+# Задержка между запросами робота (в секундах)
+Crawl-delay: 1
+
+# Указываем поисковым системам предпочтительный домен
+# (раскомментируйте нужную строку)
+
+# Для версии с www:
+# Host: www.anti-ai-mechanic-lesson-3-transmiss.vercel.app
+
+# Для версии без www:
+Host: anti-ai-mechanic-lesson-3-transmiss.vercel.app
